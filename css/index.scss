@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400\;900&display=swap');
+@import './partials/_base';
+
+body {
+  background-color: #CCAA99;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
+}
+
+.header {
+  background-color: #996666;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  border-bottom: 5px solid #885555;
+  box-shadow: 0 5px 0 #BB9988;
+}
+
+.letter {
+  color: #CCCCCC;
+  text-shadow: 0 5px 0 #999999;
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container, .container-sm {
+  max-width: 540px;
+}
+
+.link {
+  color: #885555;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
