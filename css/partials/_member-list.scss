@@ -5,7 +5,7 @@
   // The member cards
   li {
     @extend .card;
-    flex-basis: 260px;
+    flex: 1 0 260px;
     margin: 5px;
     background-color: rgba(white, 0.6);
     transition: background-color 400ms ease;

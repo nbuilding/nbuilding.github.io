@@ -49,7 +49,7 @@ ul {
   flex-wrap: wrap;
 }
 .member-list li {
-  flex-basis: 260px;
+  flex: 1 0 260px;
   margin: 5px;
   background-color: rgba(255, 255, 255, 0.6);
   transition: background-color 400ms ease;
