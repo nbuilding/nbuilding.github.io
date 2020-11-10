@@ -51,9 +51,9 @@ ul {
 .member-list li {
   flex-basis: 260px;
   margin: 5px;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.6);
   transition: background-color 400ms ease;
-  border-left: solid 5px #996666;
+  border-bottom: solid 5px #996666;
 }
 .member-list li:hover {
   background-color: white;

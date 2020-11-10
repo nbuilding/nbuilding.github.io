@@ -7,9 +7,9 @@
     @extend .card;
     flex-basis: 260px;
     margin: 5px;
-    background-color: rgba(white, 0.45);
+    background-color: rgba(white, 0.6);
     transition: background-color 400ms ease;
-    border-left: solid 5px $theme-primary;
+    border-bottom: solid 5px $theme-primary;
 
     &:hover {
       background-color: white;
