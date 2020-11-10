@@ -1,0 +1,41 @@
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  // The member cards
+  li {
+    @extend .card;
+    flex: 1 0 260px;
+    margin: 5px;
+    background-color: rgba(white, 0.6);
+    transition: background-color 400ms ease;
+    border-bottom: solid 5px $theme-primary;
+
+    &:hover {
+      background-color: white;
+    }
+
+    h3 {
+      $font-size: 1.1rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-size: $font-size;
+      font-family: Roboto Condensed, sans-serif;
+
+      // Thumbnail
+      img {
+        $size: $font-size * 1.5; // Thumbnail is 1.5x larger than the h3
+        height: $size;
+        width: $size;
+        border-radius: $size / 2;
+        margin: 10px 10px 10px 0;
+      }
+    }
+
+    hr {
+      margin-top: 0;
+      border: 1px solid $bg-shadow;
+    }
+  }
+}
