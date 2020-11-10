@@ -37,6 +37,45 @@ ul {
   list-style: none;
 }
 
+.card, .member-list li {
+  display: block;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 12px;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.member-list li {
+  flex-basis: 260px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+  transition: background-color 400ms ease;
+  border-left: solid 5px #996666;
+}
+.member-list li:hover {
+  background-color: white;
+}
+.member-list li h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: Roboto Condensed, sans-serif;
+}
+.member-list li h3 img {
+  height: 1.65rem;
+  width: 1.65rem;
+  border-radius: 0.825rem;
+  margin: 10px 10px 10px 0;
+}
+.member-list li hr {
+  margin-top: 0;
+  border: 1px solid #BB9988;
+}
+
 body {
   background-color: #CCAA99;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
