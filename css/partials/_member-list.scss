@@ -1,31 +1,37 @@
+$h3-size: 1.1rem;
+
+%vertical-align {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 .member-list {
   display: flex;
   flex-wrap: wrap;
 
-  // The member cards
+  // Member cards
   li {
     @extend .card;
-    flex: 1 0 260px;
+    flex: 1 1 260px;
     margin: 5px;
     background-color: rgba(white, 0.6);
     transition: background-color 400ms ease;
-    border-bottom: solid 5px $theme-primary;
+    box-shadow: 0 5px 0 $theme-primary;
 
     &:hover {
       background-color: white;
     }
 
+    // Heading with person's name
     h3 {
-      $font-size: 1.1rem;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      font-size: $font-size;
+      @extend %vertical-align;
+      font-size: $h3-size;
       font-family: Roboto Condensed, sans-serif;
 
-      // Thumbnail
+      // Header thumbnail
       img {
-        $size: $font-size * 1.5; // Thumbnail is 1.5x larger than the h3
+        $size: $h3-size * 1.5; // Thumbnail is 1.5x larger than the h3
         height: $size;
         width: $size;
         border-radius: $size / 2;
@@ -36,6 +42,18 @@
     hr {
       margin-top: 0;
       border: 1px solid $bg-shadow;
+    }
+
+    // Link logos
+    a {
+      @extend %vertical-align;
+
+      img {
+        $size: 1.1rem;
+        height: $size;
+        width: $size;
+        margin: 5px 5px 5px 0;
+      }
     }
   }
 }
