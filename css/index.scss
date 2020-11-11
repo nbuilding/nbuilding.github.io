@@ -2,6 +2,7 @@
 @import './_variables'; // Variables
 @import './partials/_base'; // Base styles
 
+@import './partials/_header'; // Header
 @import './partials/_member-list'; // Member list
 
 
@@ -11,23 +12,6 @@ body {
   Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
   'Noto Color Emoji';
-}
-
-.header {
-  background-color: $theme-primary;
-  height: 250px;
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  border-bottom: 5px solid $theme-shadow;
-  box-shadow: 0 5px 0 $bg-shadow;
-}
-
-.letter {
-  color: $header-primary;
-  text-shadow: 0 5px 0 $header-shadow;
-  font-size: 48px;
-  margin: 15px 0;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {

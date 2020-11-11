@@ -44,6 +44,21 @@ ul {
   padding: 20px 12px;
 }
 
+.header {
+  background-color: #996666;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  border-bottom: 5px solid #885555;
+  box-shadow: 0 5px 0 #BB9988;
+}
+.header .letter {
+  color: #CCCCCC;
+  text-shadow: 0 5px 0 #999999;
+  font-size: 48px;
+  margin: 15px 0;
+}
+
 .member-list li a, .member-list li h3 {
   margin: 0;
   display: flex;
@@ -87,23 +102,6 @@ ul {
 body {
   background-color: #CCAA99;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.header {
-  background-color: #996666;
-  height: 250px;
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  border-bottom: 5px solid #885555;
-  box-shadow: 0 5px 0 #BB9988;
-}
-
-.letter {
-  color: #CCCCCC;
-  text-shadow: 0 5px 0 #999999;
-  font-size: 48px;
-  margin: 15px 0;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
